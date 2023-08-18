@@ -15,7 +15,7 @@ const Header = () => {
           ["Products", "/products"],
         ].map(([title, link]) => {
           return (
-            <Link href={link} className="mr-5">
+            <Link href={link} key={title} className="mr-5">
               {title}
             </Link>
           );
